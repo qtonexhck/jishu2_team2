@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : com.test.plus360:frontend : frontend-0.0.1-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/classes/artifacts/frontend/exploded/frontend-0.0.1-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/frontend" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="frontend/web/Web Gradle : frontend-0.0.1-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="frontend" />
+          <element id="dir-copy" path="$PROJECT_DIR$/frontend/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: cn.thinkjoy.common:thinkjoy-domain-common:0.1.34-SNAPSHOT" />
+          <element id="library" level="project" name="Gradle: commons-lang:commons-lang:2.6" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/classes/artifacts/frontend/exploded/frontend-0.0.1-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
