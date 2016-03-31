@@ -1,0 +1,4 @@
+rootProject.name = 'com.yc.test.v1'
+include 'frontend'
+include 'web-war'
+
