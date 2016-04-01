@@ -1,0 +1,5 @@
+rootProject.name = 'myTest.v1'
+include 'AuthSql'
+include 'my-war'
+include 'frontend'
+
