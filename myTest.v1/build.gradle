@@ -13,7 +13,7 @@ dependencies {
 apply from: 'dependencies.gradle'
 
 allprojects {
-    group 'myTest'
+    group 'myTest.v1'
     version '1.0-SNAPSHOT'
 
 

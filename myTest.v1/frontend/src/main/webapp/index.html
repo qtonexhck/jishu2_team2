@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>今日菜单</title>
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/img1.png" />
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<!--获取绑定成功时当前时间-->
+<script language=JavaScript>
+    today=new Date();
+    function initArray(){
+        this.length=initArray.arguments.length
+        for(var i=0;i<this.length;i++)
+            this[i+1]=initArray.arguments[i] }
+    var d=new initArray(
+            "星期日",
+            "星期一",
+            "星期二",
+            "星期三",
+            "星期四",
+            "星期五",
+            "星期六");
+    document.write(
+            "<font color=white style='font-size:20pt;font-family: 微软雅黑'> ",
+            today.getFullYear(),"年",
+            today.getMonth()+1,"月",
+            today.getDate(),"日",
+            d[today.getDay()+1],
+            "</font>" );
+</script>
+
+    <div>
+      <div class="lt-navs">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            A餐
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        土豆红烧肉，宫保鸡丁
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            B餐
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        糖醋排骨，清蒸桂鱼
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            C餐
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        爆炒鱿鱼，香菇滑鸡
+                    </div>
+                </div>
+            </div>
+            <label>今天我想吃：</label>
+            <div class="form-group">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="chickenEgg" value="chicken" ng-model="formData.chickenEgg">
+                       A餐
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="chickenEgg" value="egg" ng-model="formData.chickenEgg">
+                       B餐
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="chickenEgg" value="meat" ng-model="formData.chickenEgg">
+                       C餐
+                    </label>
+                </div>
+                <input type="submit" value="确认选择" />
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+<p id="name"></p>
+
+
+
+<!-- Javascript Files -->
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/jquery.knob.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $.ajax({
+        type: "GET",
+        url:"http://localhost/back/test/user"
+    }).success(function (data){
+        $("#name").html(data.user[0].name);
+    }).fail(function(){
+
+    })
+</script>
+</body>
+</html>

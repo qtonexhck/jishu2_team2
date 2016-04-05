@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>历史订单</title>
+    <!-- CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
+    <!--<link href="/css/style.css" rel="stylesheet" />-->
+</head>
+<!--CSS-->
+<style>
+  .col-md-6{
+      background-color:greenyellow;
+      background-size:cover;
+  }
+
+</style>
+<body>
+<div class="col-md-6">
+    <div class="lt-tables">
+        <b>我的订单列表：</b>
+        <div class="lt-box">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>订单状态</th>
+                        <th>订单类型</th>
+                        <th>订单日期</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>已付款</td>
+                        <td>A</td>
+                        <td>2016.4.5</td>
+                        <td class="actions-hover actions-fade">
+                            <a href=""><i class="fa fa-pencil"></i></a>
+                            <a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>已取餐</td>
+                        <td>B</td>
+                        <td>2016.4.4</td>
+                        <td class="actions-hover actions-fade">
+                            <a href=""><i class="fa fa-pencil"></i></a>
+                            <a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>已退餐</td>
+                        <td>C</td>
+                        <td>2016.4.3</td>
+                        <td class="actions-hover actions-fade">
+                            <a href=""><i class="fa fa-pencil"></i></a>
+                            <a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Javascript Files -->
+    <script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.pagination.js"></script>
+    <script type="text/javascript" src="/js/jquery.knob.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>
