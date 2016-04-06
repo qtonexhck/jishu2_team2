@@ -1,1 +1,0 @@
-var orderApp = angular.module('orderApp', ['ngRoute']);

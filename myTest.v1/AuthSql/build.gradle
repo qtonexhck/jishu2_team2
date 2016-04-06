@@ -1,4 +1,4 @@
-group 'myTest.v1'
+group 'myTest'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'

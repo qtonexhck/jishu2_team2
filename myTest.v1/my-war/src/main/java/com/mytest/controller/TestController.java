@@ -86,7 +86,7 @@ public class TestController {
 
             //selectdemo
             Criteria criteria=  new Criteria();
-            criteria.put("name","%三%");
+            criteria.put("name","%四%");
 
             map.put("user", TUserService.selectByExample(criteria));
             //通过zookeeper获取配置文件
