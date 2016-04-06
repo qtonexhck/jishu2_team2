@@ -12,11 +12,47 @@
     <link rel="shortcut icon" href="img/img1.png" />
 
     <!-- CSS -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="/css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
 
 </head>
+<!--css-->
+<style>
+    .d{
+        margin-top: 30px;;
+        line-height:32px;
+        height:32px;
+        width:94px;
+        color:whitesmoke;
+        background-color:lightseagreen;
+        font-size:16px;
+        font-weight:normal;
+        font-family:Microsoft YaHei;
+
+        -webkit-border-top-left-radius:6px;
+        -moz-border-radius-topleft:6px;
+        border-top-left-radius:6px;
+        -webkit-border-top-right-radius:6px;
+        -moz-border-radius-topright:6px;
+        border-top-right-radius:6px;
+        -webkit-border-bottom-left-radius:6px;
+        -moz-border-radius-bottomleft:6px;
+        border-bottom-left-radius:6px;
+        -webkit-border-bottom-right-radius:6px;
+        -moz-border-radius-bottomright:6px;
+        border-bottom-right-radius:6px;
+        -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+        -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+        box-shadow: inset 0px 0px 0px 0px #ffffff;
+        text-align:center;
+        margin-left: 125px;
+        margin-bottom: 20px;
+        display:inline-block;
+        text-decoration:none;
+    }
+
+</style>
 
 <body>
 <!--获取绑定成功时当前时间-->
@@ -50,7 +86,7 @@
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            A餐
+                            <b style="color:darkred;font-size:18px;font-family: 微软雅黑;">A餐</b>
                         </a>
                     </h4>
                 </div>
@@ -64,7 +100,7 @@
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                            B餐
+                            <b style="color:darkred;font-size:18px;font-family: 微软雅黑;">B餐</b>
                         </a>
                     </h4>
                 </div>
@@ -78,7 +114,7 @@
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                            C餐
+                            <b style="color:darkred;font-size:18px;font-family: 微软雅黑;">C餐</b>
                         </a>
                     </h4>
                 </div>
@@ -88,27 +124,38 @@
                     </div>
                 </div>
             </div>
-            <label>今天我想吃：</label>
+            <b style="font-size: 18px;font-family: 微软雅黑;">今天我想吃：</b>
             <div class="form-group">
                 <div class="radio">
                     <label>
                         <input type="radio" name="chickenEgg" value="chicken" ng-model="formData.chickenEgg">
-                       A餐
+                       <b style="font-size: 17px;font-family:微软雅黑; ">A餐</b>
                     </label>
-                </div>
-                <div class="radio">
                     <label>
                         <input type="radio" name="chickenEgg" value="egg" ng-model="formData.chickenEgg">
-                       B餐
+                        <b style="font-size: 17px;font-family:微软雅黑; ">B餐</b>
                     </label>
-                </div>
-                <div class="radio">
                     <label>
                         <input type="radio" name="chickenEgg" value="meat" ng-model="formData.chickenEgg">
-                       C餐
+                        <b style="font-size: 17px;font-family:微软雅黑; ">C餐</b>
                     </label>
                 </div>
-                <input type="submit" value="确认选择" />
+                <b style="font-size: 18px;font-family: 微软雅黑;">我想在这领餐：</b>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="chickenEgg" value="chicken" ng-model="formData.chickenEgg">
+                        <b style="font-size: 17px;font-family:微软雅黑; ">17楼</b>
+                    </label>
+                    <label>
+                        <input type="radio" name="chickenEgg" value="egg" ng-model="formData.chickenEgg">
+                        <b style="font-size: 17px;font-family:微软雅黑; ">18楼</b>
+                    </label>
+                    <label>
+                        <input type="radio" name="chickenEgg" value="meat" ng-model="formData.chickenEgg">
+                        <b style="font-size: 17px;font-family:微软雅黑; ">创客</b>
+                    </label>
+                </div>
+                <a href="html/orderSuccess.html" class="d">确认订餐</a>
             </div>
         </div>
     </div>
@@ -119,10 +166,11 @@
 
 
 <!-- Javascript Files -->
-<script type="text/javascript" src="/js/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="/js/jquery.pagination.js"></script>
-<script type="text/javascript" src="/js/jquery.knob.min.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.pagination.js"></script>
+<script type="text/javascript" src="js/jquery.knob.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

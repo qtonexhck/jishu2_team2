@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
+    <script src="../js/jquery-1.10.2.js"></script>
     <title></title>
 </head>
 <body>
 <div class="body">
+    123123
     <div class="a">
-        <p>姓名:</p>
+
+
     </div>
 </div>
+<p id="name"></p>
+
+<script>
+    $.ajax({
+        type: "GET",
+        url:"http://localhost/back/test/user"
+    }).success(function (data){
+        console.log(data);
+        $("#name").html(data.user[0].name);
+    }).fail(function(){
+
+    })
+
+</script>
 </body>
+
+
 </html>

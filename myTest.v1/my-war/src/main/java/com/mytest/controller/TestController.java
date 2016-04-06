@@ -67,8 +67,10 @@ public class TestController {
 
     @ResponseBody
     @RequestMapping(value = "/test01")
-    public String test01() {
-        return "hello world";
+    public String test01(String phonenumber) {
+
+
+        return "hello world"+phonenumber;
     }
     @ResponseBody
     @RequestMapping(value = "/user")

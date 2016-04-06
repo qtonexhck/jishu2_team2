@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<table style="background-color:red" style="width:400px">
+    <tr>
+        <td>上导航</td>
+    </tr>
+    <tr>
+        <td valign="top"><iframe name = "iframe" src = "index.html"></iframe></td>
+    </tr>
+    <tr>
+        <td>下导航</td>
+    </tr>
+</table>
+
+</body>
+<script LANGUAGE="JavaScript">
+
+    function f_frameStyleResize(targObj){
+
+        var targWin = targObj.parent.document.all[targObj.name];
+
+        if(targWin != null) {
+            var HeightValue = targObj.document.body.scrollHeight
+            if(HeightValue < 600){HeightValue = 600}
+            targWin.style.pixelHeight = HeightValue;
+        }
+
+    }
+
+    function f_iframeResize(){
+        bLoadComplete = true; f_frameStyleResize(iframe);
+    }
+
+    var bLoadComplete = false;
+
+    window.onload = f_iframeResize;
+
+</script>
+</html>

@@ -3,8 +3,8 @@ html, body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size:14px;
 	font-weight:300;
-    /*background:url(/img/001.jpg) no-repeat left top;*/
-    background-image:url(/img/001.jpg);
+   background:url(/img/mb6.png) no-repeat left top;
+    background-image:url(/img/mb6.png);
     background-size:cover;
 
 }
@@ -1884,14 +1884,16 @@ a.label:focus,a.label:hover{
 	text-decoration: none !important;
 }
 .panel-body {
-	color:dodgerblue;
+	color:darkred;
+    font-family: Î¢ÈíÑÅºÚ;
+    font-weight: bold;
 }
 .panel-default > .panel-heading{
 	background-color:#b5b4b4;
 	border-color: #b5b4b4;
 }
 .panel-primary > .panel-heading{
-	,background-color:rgba(147,112,229,50);
+	background-color:lightskyblue;
 	border-color: #4ea8f5;
 }
 

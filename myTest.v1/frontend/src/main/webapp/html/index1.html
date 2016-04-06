@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>全通点餐</title>
+    <style type="text/css">
+        .header{border-bottom:1px solid #ccc;margin-bottom:5px;}
+        .sidebar{width:30%;float:left;margin-right:-180px;border-right:1px solid #ccc;min-height:500px;padding:5px;}
+        .main{width:70%;float:left;margin-left:200px;padding:5px;}
+        .content{padding:0 10px;}
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <div id="title">
+            <h1>全通点餐</h1>
+        </div>
+    </div>
+    <div>
+        <div class="sidebar">
+            <a href="index.html">主页</a></br>
+            <a href="bind.html">绑定</a>
+        </div>
+        <div  id="main" class="main" ng-view>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
